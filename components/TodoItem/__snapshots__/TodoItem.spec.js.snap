@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoItem matches the snapshot 1`] = `
+<li
+  className="todo-item"
+>
+  <label
+    className="todo-item__label"
+    htmlFor="checkbox-id"
+  >
+    <div
+      className="todo-item__input-wrapper"
+    >
+      <CheckboxInput
+        checked={false}
+        id="checkbox-id"
+        name="checkbox-name"
+        onChange={[MockFunction]}
+        type="checkbox"
+        value="value"
+      />
+    </div>
+    Todo item label
+  </label>
+  <div
+    className="todo-item__delete-button-container"
+  >
+    <Button
+      aria-label="Delete item: Todo item label."
+      data-testid="delete-button"
+      id="checkbox-id-delete-button"
+      onClick={[MockFunction]}
+      theme="bare"
+    >
+      <DeleteButtonIcon />
+    </Button>
+  </div>
+</li>
+`;

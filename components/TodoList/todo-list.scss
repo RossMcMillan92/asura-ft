@@ -1,0 +1,75 @@
+@import '../../styles/settings/breakpoints.scss';
+@import '../../styles/settings/pallete.scss';
+
+.todo-list {
+  width: 100%;
+  max-width: 500px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.15),
+    0 5px 32px -14px rgba(0, 0, 0, 0.35);
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.todo-list__title {
+  font-size: 24px;
+  font-weight: 300;
+  margin: 25px 0;
+  color: $base-text-color;
+  text-align: center;
+
+  @media (min-width: $breakpoint-tablet) {
+    font-size: 30px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    font-size: 38px;
+  }
+}
+
+.todo-list__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.todo-list__entry-section {
+  background-color: #f7f7f7;
+  padding: 15px;
+
+  @media (min-width: $breakpoint-tablet) {
+    padding: 25px;
+  }
+}
+
+.todo-list__empty-message {
+  height: 62px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+  @media (min-width: $breakpoint-tablet) {
+    height: 92px;
+  }
+}
+
+.todo-list__empty-message-text {
+  font-size: 16px;
+  color: $base-text-color;
+  animation: fade-in 1s ease-in-out;
+
+  @media (min-width: $breakpoint-tablet) {
+    font-size: 19px;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

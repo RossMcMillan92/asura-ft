@@ -1,0 +1,80 @@
+@import '../../styles/settings/breakpoints.scss';
+@import '../../styles/settings/pallete.scss';
+
+$todo-item__size: 30px;
+$todo-item__spacing: 15px;
+$todo-item__spacing--tablet: 25px;
+
+.todo-item {
+  position: relative;
+  display: flex;
+}
+
+.todo-item__label {
+  display: block;
+  font-size: 16px;
+  line-height: 1.4;
+  word-break: break-word;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  color: $base-text-color;
+  padding: $todo-item__spacing ($todo-item__spacing * 4) $todo-item__spacing
+    $todo-item__spacing;
+  border: solid 1px rgba(0, 0, 0, 0);
+  border-width: 1px 0;
+
+  &:focus-within,
+  &:hover,
+  &:active,
+  .todo-item:focus-within & {
+    background-color: #fafafa;
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    font-size: 19px;
+    padding: $todo-item__spacing--tablet ($todo-item__spacing--tablet * 4)
+      $todo-item__spacing--tablet $todo-item__spacing--tablet;
+  }
+}
+
+.todo-item__input-wrapper {
+  position: relative;
+  margin-right: $todo-item__spacing;
+
+  @media (min-width: $breakpoint-tablet) {
+    margin-right: $todo-item__spacing--tablet;
+  }
+}
+
+.todo-item__delete-button-container {
+  position: absolute;
+  right: $todo-item__spacing;
+  top: 50%;
+  transform: translateY(-50%);
+
+  @media (min-width: $breakpoint-tablet) {
+    right: $todo-item__spacing--tablet;
+  }
+}
+
+.todo-item__delete-button-icon {
+  display: block;
+
+  .todo-item:hover & {
+    opacity: 1;
+  }
+  @media (min-width: $breakpoint-tablet) {
+    opacity: 0;
+
+    .todo-item:hover &,
+    .todo-item:focus-within & {
+      opacity: 1;
+    }
+  }
+
+  // Ensure the button is visible on larger touch devices
+  @media (hover: none) {
+    opacity: 1;
+  }
+}

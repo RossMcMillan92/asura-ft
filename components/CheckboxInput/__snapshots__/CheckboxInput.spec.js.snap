@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CheckboxInput matches the snapshot 1`] = `
+<div
+  className="checkbox-input"
+>
+  <input
+    checked={false}
+    className="checkbox-input__input"
+    id="checkbox-id"
+    name="checkbox-name"
+    onChange={[MockFunction]}
+    type="checkbox"
+    value="value"
+  />
+  <div
+    className="checkbox-input__facade"
+  >
+    <CheckboxTickIcon />
+  </div>
+</div>
+`;

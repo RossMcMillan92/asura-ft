@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoList matches the snapshot 1`] = `
+<section
+  aria-labelledby="todo-list-heading"
+  className="todo-list"
+>
+  <h1
+    className="todo-list__title"
+    id="todo-list-heading"
+    tabIndex="-1"
+  >
+    To Do
+  </h1>
+  <ul
+    className="todo-list__list"
+  >
+    <TodoItem
+      checked={false}
+      id="todo-0"
+      key="Task 1"
+      label="Task 1"
+      name="todo[]"
+      onChange={[Function]}
+      onDelete={[Function]}
+      value="Task 1"
+    />
+    <TodoItem
+      checked={true}
+      id="todo-1"
+      key="Task 2"
+      label="Task 2"
+      name="todo[]"
+      onChange={[Function]}
+      onDelete={[Function]}
+      value="Task 2"
+    />
+  </ul>
+  <div
+    className="todo-list__entry-section"
+  >
+    <AddTodoForm
+      onSubmit={[Function]}
+    />
+  </div>
+  <div
+    aria-live="polite"
+    className="todo-list__announcer u-visually-hidden"
+    role="status"
+  />
+</section>
+`;

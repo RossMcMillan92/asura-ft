@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddTodoForm matches the snapshot 1`] = `
+<form
+  className="u-flex-row u-width-100%"
+  onSubmit={[Function]}
+>
+  <TextInput
+    aria-invalid={true}
+    autoComplete="off"
+    className="u-flex-grow-1 u-margin-right-20"
+    id="todo-entry"
+    label="Enter a task..."
+    name="todo-entry"
+    onChange={[Function]}
+    placeholder="Enter a task..."
+    required={true}
+    value=""
+  />
+  <Button>
+    Add
+  </Button>
+</form>
+`;

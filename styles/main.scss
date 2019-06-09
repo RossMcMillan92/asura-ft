@@ -1,0 +1,11 @@
+// SETTINGS
+@import 'settings/pallete.scss';
+
+// BASE
+@import '../node_modules/normalize.css/normalize.css';
+@import 'base/global.scss';
+
+// COMPONENTS (imported via components js file)
+
+// UTILS
+@import 'utils/structure.scss';

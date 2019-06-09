@@ -1,0 +1,19 @@
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: #efefef;
+  border-top: solid 210px lighten($base-theme-color, 20%);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus {
+  outline: none;
+}

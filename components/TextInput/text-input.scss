@@ -1,0 +1,15 @@
+@import '../../styles/settings/pallete.scss';
+
+.text-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 19px;
+  color: $base-text-color;
+  border: solid 2px $base-ui-color;
+  border-radius: 3px;
+  transition: border-color 0.25s ease-in-out;
+
+  &:focus {
+    border-color: lighten(desaturate($base-theme-color, 10%), 15%);
+  }
+}
